@@ -4,12 +4,21 @@
 /** Map relative paths to URLs. */
 var map = {
     'immutable': 'vendor/immutable/dist/immutable.js',
+    '@ngrx': 'vendor/@ngrx',
 };
 /** User packages configuration. */
 var packages = {
     'immutable': {
         format: 'cjs'
-    }
+    },
+    '@ngrx/core': {
+        main: 'index.js',
+        format: 'cjs'
+    },
+    '@ngrx/store': {
+        main: 'index.js',
+        format: 'cjs'
+    },
 };
 ////////////////////////////////////////////////////////////////////////////////////////////////
 /***********************************************************************************************
