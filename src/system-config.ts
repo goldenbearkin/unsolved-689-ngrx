@@ -4,8 +4,7 @@
 /** Map relative paths to URLs. */
 const map: any = {
   'immutable': 'vendor/immutable/dist/immutable.js',
-  '@ngrx/core': 'vendor/@ngrx/core',
-  '@ngrx/store': 'vendor/@ngrx/store',
+  '@ngrx': 'vendor/@ngrx',
 };
 
 /** User packages configuration. */
