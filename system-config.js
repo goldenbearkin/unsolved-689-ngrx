@@ -2,7 +2,9 @@
  * User Configuration.
  **********************************************************************************************/
 /** Map relative paths to URLs. */
-var map = {};
+var map = {
+    'immutable': 'vendor/immutable/dist/immutable.js',
+};
 /** User packages configuration. */
 var packages = {};
 ////////////////////////////////////////////////////////////////////////////////////////////////
