@@ -8,6 +8,9 @@ const map: any = {
 
 /** User packages configuration. */
 const packages: any = {
+  'immutable':{
+    format: 'cjs'
+  }
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
