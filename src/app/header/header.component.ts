@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { List } from 'immutable';
 
 @Component({
   moduleId: module.id,
@@ -8,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() {}
+  constructor() {
+    // console.log(List);
+  }
 
   ngOnInit() {
+    console.log(List);
   }
 
 }

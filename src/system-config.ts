@@ -3,6 +3,7 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
+  'immutable': 'vendor/immutable/dist/immutable.js',
 };
 
 /** User packages configuration. */
