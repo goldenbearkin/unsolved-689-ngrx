@@ -25,7 +25,7 @@ import {
 })
 export class Unsolved689NgrxAppComponent {
   constructor(public store: Store<AppState>) {
-    
+    console.log(store);
   }
   
   private onCreate(event) {

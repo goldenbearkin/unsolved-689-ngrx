@@ -11,6 +11,10 @@ import { List } from 'immutable';
 export class HeaderComponent {
   @Output() create = new EventEmitter()
   
+  constructor() {
+    console.log(List);
+  }
+  
   public newTodo: string = '';
   
   private onChange() {
