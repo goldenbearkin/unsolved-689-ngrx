@@ -43,6 +43,7 @@ const barrels: string[] = [
   'app',
   'app/shared',
   'app/shared/ngrx',
+  'app/shared/ngrx/reducers',
   'app/header',
   /** @cli-barrel */
 ];
