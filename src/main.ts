@@ -8,8 +8,6 @@ if (environment.production) {
   enableProdMode();
 }
 
-console.log(provideStore);
-
 bootstrap(Unsolved689NgrxAppComponent, [
   provideStore({ 
     todos: todosReducer
