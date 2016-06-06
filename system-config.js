@@ -6,7 +6,11 @@ var map = {
     'immutable': 'vendor/immutable/dist/immutable.js',
 };
 /** User packages configuration. */
-var packages = {};
+var packages = {
+    'immutable': {
+        format: 'cjs'
+    }
+};
 ////////////////////////////////////////////////////////////////////////////////////////////////
 /***********************************************************************************************
  * Everything underneath this line is managed by the CLI.
