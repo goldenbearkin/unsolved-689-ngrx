@@ -13,6 +13,7 @@ module.exports = function(defaults) {
       'rxjs/**/*.+(js|js.map)',
       '@angular/**/*.+(js|js.map)',
       'immutable/dist/**/*.+(js|js.map)',
+      '@ngrx/**/*.+(js|js.map)',
     ]
   });
 };

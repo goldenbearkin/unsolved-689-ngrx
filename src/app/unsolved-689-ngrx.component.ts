@@ -1,6 +1,19 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from './header/header.component'
 
+//redux
+import { Store } from '@ngrx/store';
+import { AppState } from './shared/ngrx/state';
+import { 
+  Todo, 
+  UNSOLVED_CREATE, 
+  UNSOLVED_TOGGLE_COMPLETE_ALL, 
+  UNSOLVED_DESTROY_COMPLETED,
+  UNSOLVED_UNDO_COMPLETE,
+  UNSOLVED_DESTROY,
+  UNSOLVED_COMPLETE
+} from './shared/ngrx/reducers/todos';
+
 @Component({
   moduleId: module.id,
   selector: 'unsolved-689-ngrx-app',
@@ -11,5 +24,14 @@ import { HeaderComponent } from './header/header.component'
   ]
 })
 export class Unsolved689NgrxAppComponent {
-  // title = 'unsolved-689-ngrx works!';
+  constructor(public store: Store<AppState>) {
+    
+  }
+  
+  private onCreate(event) {
+    this.store.dispatch({
+      type: UNSOLVED_CREATE,
+      payload: event
+    });
+  }
 }
