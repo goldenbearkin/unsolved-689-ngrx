@@ -1,0 +1,46 @@
+$primary-color: #fede33;
+$text-color: #2b3132;
+$alt-text-color: #737b7c;
+$secondary-color: #e1901b;
+$secondary-darker-color: darken($secondary-color, 10%);
+
+// Extensions
+.flex-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+}
+  
+:host {
+  padding: 1.25em .5em;
+  text-align: center;
+  color: $secondary-darker-color;
+  background-color: $primary-color;
+  order: 2;
+
+  & > .Footer-count {
+    font-size: .85em;
+    font-weight: lighter;
+    vertical-align: middle;
+  }
+}
+
+#clear-completed {
+  outline: none;
+  font-size: .75em;
+  padding: 0.5em 1em;
+  border-radius: 3em;
+  background-color: transparent;
+  border: 1px solid $secondary-darker-color;
+  color: $secondary-darker-color;
+  font-weight: bold;
+  margin-left: 1em;
+  transition: all .5s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $secondary-darker-color;
+    color: white;
+  }
+}

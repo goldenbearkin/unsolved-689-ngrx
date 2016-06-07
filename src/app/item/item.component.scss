@@ -1,0 +1,74 @@
+$primary-color: #fede33;
+$text-color: #2b3132;
+$alt-text-color: #737b7c;
+$secondary-color: #e1901b;
+$secondary-darker-color: darken($secondary-color, 10%);
+
+// Extensions
+.flex-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+li {
+  display: block;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  &.editing {
+    & > .view {
+      & > .view-text {
+        & > label {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .view {
+    @extend .flex-container;
+    flex-direction: row;
+    padding: .25em 0;
+
+    input.edit {
+      width: 100%;
+      border: none;
+      color: $text-color;
+    }
+
+    & > .view-input,
+    & > .view-text,
+    & > .view-action {
+      padding: .25em
+    }
+
+    & > .view-text {
+      font-weight: bold;
+      flex: 1;
+
+      small {
+        color: $secondary-color;
+        font-weight: 300!important;
+      }
+    }
+
+    & > .view-action {
+      .destroy {
+        color: $alt-text-color;
+        background-color: white;
+        border: none;
+        outline: none;
+        padding: .5em;
+        cursor: pointer;
+
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+}
+

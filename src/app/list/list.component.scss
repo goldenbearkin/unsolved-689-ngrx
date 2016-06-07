@@ -1,0 +1,50 @@
+$primary-color: #fede33;
+$text-color: #2b3132;
+$alt-text-color: #737b7c;
+$secondary-color: #e1901b;
+$secondary-darker-color: darken($secondary-color, 10%);
+
+// Extensions
+.flex-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+}
+  
+:host {
+  padding: 1em 1em 0;
+  box-shadow: 0 2px 26px 0 #d79d13;
+  z-index: 2;
+  @extend .flex-container;
+  order: 1;
+  flex-direction: column;
+  flex: 1;
+  
+  & > .List-actions {
+    padding: .5em .25em;
+    margin-bottom: .25em;
+    border-bottom: 1px solid #ddd;
+
+    & > label {
+      color: #999;
+      font-size: 0.85em;
+    }
+    
+    & > label,
+    & > input {
+      margin-left: .25em;
+    }
+  }
+
+  & > .List-items {
+    overflow: hidden;
+    overflow-y: auto;
+    min-height: 100px;
+    padding: 0;
+    margin: 0;
+    @extend .flex-container;
+    flex: 1;
+    flex-direction: column;
+  }
+}

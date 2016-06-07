@@ -1,5 +1,4 @@
-import { Component, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
-import { List } from 'immutable';
+import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   moduleId: module.id,
@@ -10,10 +9,6 @@ import { List } from 'immutable';
 })
 export class HeaderComponent {
   @Output() create = new EventEmitter()
-  
-  constructor() {
-    console.log(List);
-  }
   
   public newTodo: string = '';
   

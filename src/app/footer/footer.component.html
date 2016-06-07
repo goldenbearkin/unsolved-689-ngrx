@@ -1,0 +1,4 @@
+<span class="Footer-count">
+  <strong>{{itemsLeft}}</strong> 件事未解決
+</span>
+<button *ngIf="complete > 0" id="clear-completed" (click)="onClick()">清走已解決 ({{complete}})</button>

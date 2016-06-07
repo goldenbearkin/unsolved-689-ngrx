@@ -1,0 +1,32 @@
+$primary-color: #fede33;
+$text-color: #2b3132;
+$alt-text-color: #737b7c;
+$secondary-color: #e1901b;
+$secondary-darker-color: darken($secondary-color, 10%);
+
+// Extensions
+.flex-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+:host {
+  display: block;
+  height: 100%;
+  padding: 0;
+  max-width: 520px;
+  background: white;
+  margin: 0 auto;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 32px 0 rgba(0,0,0,0.25);
+  overflow: hidden;
+
+  & > .wrapper {
+    @extend .flex-container;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+}

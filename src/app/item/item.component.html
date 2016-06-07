@@ -1,0 +1,17 @@
+<li>
+  <div class="view">
+    <div class="view-input">
+      <input 
+        type="checkbox"
+        (click)="onComplete()"
+        [checked]="todo.complete">
+    </div>
+    <div class="view-text">
+        {{header}}<br/>
+        <small>{{subHeader}}</small>
+    </div>
+    <div class="view-action">
+      <button class="destroy fa fa-times" (click)="onRemove()"></button>
+    </div>
+  </div>
+</li>
