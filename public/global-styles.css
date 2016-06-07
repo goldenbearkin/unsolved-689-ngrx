@@ -1,0 +1,20 @@
+.flex-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch; }
+
+html, body {
+  font-family: "PingFang TC Regular", sans-serif;
+  font-size: 16px;
+  background-color: #dfe3e4;
+  color: #2b3132;
+  padding: 0;
+  margin: 0;
+  height: 100%; }
+
+#root {
+  position: absolute;
+  width: 100%;
+  top: 1.5em;
+  bottom: 1.5em; }

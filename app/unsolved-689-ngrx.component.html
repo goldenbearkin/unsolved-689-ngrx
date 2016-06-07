@@ -1,4 +1,14 @@
-<h1>
-  This is root.
-</h1>
-<app-header (create)="onCreate($event)"></app-header>
+<div class="wrapper">
+  <app-header (create)="onCreate($event)"></app-header>
+  <app-list 
+    [todos]="todos$ | async"
+    (allComplete)="onAllComplete()"
+    (complete)="onComplete($event)" 
+    (remove)="onListRemove($event)">
+  </app-list>
+  <app-footer 
+    [itemsLeft]="itemsLeft$ | async"
+    [complete]="complete$ | async"
+    (remove)="onFootRemove()">
+  </app-footer>
+</div>

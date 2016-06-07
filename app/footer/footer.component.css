@@ -1,0 +1,32 @@
+.flex-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch; }
+
+:host {
+  padding: 1.25em .5em;
+  text-align: center;
+  color: #b37316;
+  background-color: #fede33;
+  order: 2; }
+  :host > .Footer-count {
+    font-size: .85em;
+    font-weight: lighter;
+    vertical-align: middle; }
+
+#clear-completed {
+  outline: none;
+  font-size: .75em;
+  padding: 0.5em 1em;
+  border-radius: 3em;
+  background-color: transparent;
+  border: 1px solid #b37316;
+  color: #b37316;
+  font-weight: bold;
+  margin-left: 1em;
+  transition: all .5s; }
+  #clear-completed:hover {
+    cursor: pointer;
+    background-color: #b37316;
+    color: white; }

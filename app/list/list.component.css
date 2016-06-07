@@ -1,0 +1,31 @@
+.flex-container, :host, :host > .List-items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch; }
+
+:host {
+  padding: 1em 1em 0;
+  box-shadow: 0 2px 26px 0 #d79d13;
+  z-index: 2;
+  order: 1;
+  flex-direction: column;
+  flex: 1; }
+  :host > .List-actions {
+    padding: .5em .25em;
+    margin-bottom: .25em;
+    border-bottom: 1px solid #ddd; }
+    :host > .List-actions > label {
+      color: #999;
+      font-size: 0.85em; }
+    :host > .List-actions > label,
+    :host > .List-actions > input {
+      margin-left: .25em; }
+  :host > .List-items {
+    overflow: hidden;
+    overflow-y: auto;
+    min-height: 100px;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+    flex-direction: column; }

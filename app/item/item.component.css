@@ -1,0 +1,39 @@
+.flex-container, li .view {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch; }
+
+li {
+  display: block;
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+  li.editing > .view > .view-text > label {
+    display: none; }
+  li .view {
+    flex-direction: row;
+    padding: .25em 0; }
+    li .view input.edit {
+      width: 100%;
+      border: none;
+      color: #2b3132; }
+    li .view > .view-input,
+    li .view > .view-text,
+    li .view > .view-action {
+      padding: .25em; }
+    li .view > .view-text {
+      font-weight: bold;
+      flex: 1; }
+      li .view > .view-text small {
+        color: #e1901b;
+        font-weight: 300 !important; }
+    li .view > .view-action .destroy {
+      color: #737b7c;
+      background-color: white;
+      border: none;
+      outline: none;
+      padding: .5em;
+      cursor: pointer; }
+      li .view > .view-action .destroy:hover {
+        color: red; }

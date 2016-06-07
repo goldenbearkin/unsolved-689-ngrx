@@ -1,0 +1,16 @@
+<div class="List-actions">
+  <input
+    id="toggle-all"
+    type="checkbox"
+    (click)="onAllComplete()"
+  />
+  <label htmlFor="toggle-all">一次過解決</label>
+</div>
+<ul class="List-items">
+  <app-item 
+    *ngFor="let todo of todos" [todo]="todo" 
+    (complete)="onComplete($event)" 
+    (remove)="onRemove($event)">
+  </app-item>
+</ul>
+

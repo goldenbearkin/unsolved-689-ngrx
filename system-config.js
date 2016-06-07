@@ -38,9 +38,10 @@ var barrels = [
     // App specific barrels.
     'app',
     'app/shared',
-    'app/shared/ngrx',
-    'app/shared/ngrx/reducers',
     'app/header',
+    'app/item',
+    'app/list',
+    'app/footer',
 ];
 var cliSystemConfigPackages = {};
 barrels.forEach(function (barrelName) {
